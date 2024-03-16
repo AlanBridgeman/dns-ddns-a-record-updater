@@ -42,5 +42,13 @@ if __name__ == '__main__':
     if not len(sys.argv) < 3 and len(sys.argv) > 6:
         print('Usage: python . <GoDaddy_domain_to_update> <Dynamic_DNS_domain> [DNS_provider (optional)] [log_filename (optional)] [log_level (optional)]')
         exit(1)
-    
-    main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
+
+    # TODO: Rethink this code but good enough for now
+    if len(sys.argv) == 3: 
+        main(sys.argv[1], sys.argv[2])
+    elif len(sys.argv) == 4:
+        main(sys.argv[1], sys.argv[2], sys.argv[3])
+    elif len(sys.argv) == 5:
+        main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
+    elif len(sys.argv) == 6:
+        main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
