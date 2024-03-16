@@ -3,7 +3,7 @@ import sys, os, socket
 from src.Logger import Logger
 from src.DNSUpdater import DNSUpdater
 
-def main(dns_domain: str, ddns_domain: str, dns_provider='GoDaddy', log_filename: str = '/var/log/dns_updater.log', log_level: str = 'INFO'):
+def main(dns_domain: str, ddns_domain: str, dns_provider: str = 'GoDaddy', log_filename: str = '/var/log/dns_updater.log', log_level: str = 'INFO'):
     """Entrypoint for the script
 
     Args:

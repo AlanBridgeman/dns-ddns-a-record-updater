@@ -1,8 +1,8 @@
 import requests
 from dotenv import dotenv_values
 
-from . import DNSUpdater
-from . import Logger
+from .DNSUpdater import DNSUpdater
+from .Logger import Logger
 
 class GoDaddyDNSUpdater(DNSUpdater):
     def __init__(self, domain: str, logger: Logger):
