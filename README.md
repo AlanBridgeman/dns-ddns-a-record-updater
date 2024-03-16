@@ -38,7 +38,7 @@ crontab -e
 
 And then add the appropriate configurations (This specific line tells cron to run once a day at midnight)
 ```txt
-0 0 * * * * /path/to/folder/.venv/bin/python /path/to/folder/__main__.py <to_update_domain> <domain_to_get_ip_from>
+0 0 * * * /path/to/folder/.venv/bin/python /path/to/folder/__main__.py <to_update_domain> <domain_to_get_ip_from>
 ```
 
 Note, you'll have to replace `/path/to/folder`, `<to_update_domain>` and `<domain_to_get_ip_from>` appropriately.
